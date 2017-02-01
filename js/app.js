@@ -39,9 +39,9 @@ $('#foodInput').keyup(function(){
 $('#drinkInput').keypress(function(e){
   if(e.keyCode === 13){
     var newDrink = $('#drinkInput').val()
-    if (newDrink != ) {
+    if (newDrink !== '') {
       $('#drinks').append('<li>'+newFood+'</li>')
-      $('#drinkInput').val()
+      $('#drinkInput').val('')
     }
   }
 })
