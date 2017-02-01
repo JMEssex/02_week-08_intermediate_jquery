@@ -11,5 +11,9 @@
 }
 
 .purple {
-  background: purple;
+  background-color: rgba(100,0,100,.7);
+}
+
+.purpleText {
+  color: purple;
 }

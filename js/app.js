@@ -40,8 +40,11 @@ $('#drinkInput').keypress(function(e){
   if(e.keyCode === 13){
     var newDrink = $('#drinkInput').val()
     if (newDrink !== '') {
-      $('#drinks').append('<li>'+newFood+'</li>')
+      $('#drinks').append('<li class="purpleText">'+newDrink+'</li>')
       $('#drinkInput').val('')
+      $('#drinkInput').removeClass('purple')
+    } else {
+      $('#drinkInput').addClass('purple')
     }
   }
 })
